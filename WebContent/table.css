@@ -1,0 +1,114 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.over-x{
+	overflow-x: scroll;
+}
+
+table input[type="text"], table input[type="number"], table select{
+	padding: 5px;
+	margin: 0px;
+	background-color: #89eb4e !important;
+	border-bottom: none;
+	color: #1C1D21;
+}
+
+table input[type="text"][readonly], table input[type="number"][readonly], table select[disabled]{
+	background-color: #FFFFFF00 !important;
+}
+
+table select{
+	border: none;
+	-webkit-appearance: none;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  table-layout: fixed;
+}
+
+table th {
+  background-color: #1C1D21CC;
+  color: #FFFFFF;
+  border-bottom: 1px solid #1C1D21CC;
+  padding: 2px;
+}
+
+table td {
+  border-bottom: 1px solid #1C1D21CC;
+  padding: 2px;
+  font-size: 12px;
+}
+
+table th,
+table td {
+  padding: 2px;
+}
+
+table th {
+  font-size: 14px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+table td:last-child{
+  width: 60px;
+}
+
+
+@media screen and (max-width: 767px) {
+  table {
+      width: 100%;
+  }
+  
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  
+  table tr {
+    display: block;
+    margin-bottom: 10px;
+    border-bottom: 3px solid;
+    
+  }
+  
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: 12px;
+    text-align: right;
+  }
+  
+  table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  table td:last-child{
+    width: auto;
+  }
+  
+  table button{
+  	position: relative;
+  	left: -30px;
+  	width: 60px;
+  }
+  
+  table input[type="text"], table input[type="number"], select{
+	width: 156px;
+	height: 21px;
+}
+}

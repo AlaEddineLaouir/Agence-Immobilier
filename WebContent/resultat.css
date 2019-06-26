@@ -1,0 +1,43 @@
+.recherche{
+    z-index: 1000;
+}
+
+.recherche .wrap-login100{
+    width: 100%;
+    padding: 50px 25px 25px 25px;
+    overflow-y: scroll;
+    z-index: 1000;
+}
+
+.recherche .wrap-login100 .fa-remove, .recherche .wrap-login100 .fa-close{
+    top: -25px;
+    left: 0px;
+}
+
+.recherche .wrap-login100 .mc-btn-action .fa {
+	position: relative;
+	top: 15px;
+    
+}
+
+.material-card.mc-active .mc-content{
+    height: 120%;
+}
+
+.material-card.mc-active .mc-description{
+    top: 90px;
+    margin: 25px 0px 0px 0px;
+    height: 63%;
+    padding: 0;
+    overflow-y: scroll;
+}
+
+@media(max-width: 767px){
+    .material-card.mc-active .mc-description{
+        top: 0;
+        height: 85%;
+    }
+    .material-card.mc-active .mc-content{
+        height: 92vw;
+    }
+}

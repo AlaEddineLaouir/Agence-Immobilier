@@ -1,0 +1,17 @@
+img.img-responsive{
+    height: 100%;
+}
+
+.left{
+    position: relative;
+    z-index: 999;
+    top: 50%;
+    left: 8px;
+}
+
+.right{
+    position: relative;
+    z-index: 998;
+    top: 50%;
+    left: calc(100% - 32px);
+}

@@ -1,0 +1,183 @@
+@page {
+    size: auto;
+    margin: 0;
+}
+@media print {
+	*{
+		font-family: sans-serif;
+	}
+	a[href]:after{
+		content:none
+	}
+    .imprimable .body {
+        border: none;
+        margin: 0;
+        padding: 0;
+    }
+    .imprimable .control{
+        display: none !important;
+    }
+    .location{
+        display: none !important;
+    }
+    .paiement{
+        display: none !important;
+    }
+    h1{
+    	color: #F14C4C !important;
+    }
+}
+
+#contrat, #facture{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 1000;
+}
+
+.imprimable .html {
+    font-size: 13px;
+    line-height: 1.5;
+    background: #ddd;
+    box-sizing: border-box;
+}
+.imprimable .body {
+    width: 21cm;
+    height: 29.7cm;
+    background: white;
+    padding: 2rem;
+	margin: 0 auto;
+}
+.imprimable *{
+    box-sizing: inherit;
+}
+.imprimable .row:after, .imprimable .invoicelist-footer:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.imprimable .row {
+    position: relative;
+    display: block;
+    width: 100%;
+    font-size: 0;
+}
+.imprimable .col-10 {
+    width: 10%;
+}
+.imprimable .col-25 {
+    width: 25%;
+}
+.imprimable .col-30{
+    width: 30%;
+}
+.imprimable .col-33 {
+    width: 33%;
+}
+.imprimable .col-50 {
+    width: 49%;
+}
+.imprimable .col-100 {
+    width: 100%;
+}
+.imprimable .text-center {
+    text-align: center;
+}
+.imprimable .text-right {
+    text-align: right;
+}
+.imprimable a {
+	font-size: 1.1rem;
+    color: #F14C4C;
+    text-decoration: none;
+}
+.imprimable p {
+	font-size: 1.2rem;
+    margin: 0;
+}
+.imprimable .col, .imprimable .me, [class*="col-"]{
+    vertical-align: top;
+    display: inline-block;
+    font-size: 1rem;
+    padding: 0 1rem;
+}
+.imprimable header {
+    margin: 1rem 0 0;
+    padding: 0 0 2rem 0;
+    border-bottom: 3pt solid #F14C4C;
+}
+.imprimable header p {
+    font-size: 1.1rem;
+}
+.imprimable .section {
+    margin: 3rem 0 0;
+}
+.imprimable h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 2rem;
+    color: #F14C4C;
+}
+.imprimable .invoicelist-body {
+    margin: 1rem;
+}
+.imprimable .invoicelist-body table {
+    width: 100%;
+}
+.imprimable .invoicelist-body thead {
+    text-align: left;
+}
+.imprimable .invoicelist-body td, .imprimable .invoicelist-body th {
+	font-size: 1.1rem;
+	letter-spacing: 0;
+	background-color: #FFF;
+	color: #666666;
+    position: relative;
+    padding: 1rem 0 0 0;
+}
+.imprimable .control {
+    display: inline-block;
+    color: white;
+    background: #F14C4C;
+    padding: 3px 7px;
+    font-size: .9rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin: 2px;
+}
+.imprimable .control:hover {
+  background: #f36464;
+}
+
+.imprimable .invoicelist-footer table {
+    float: right;
+    width: inherit;
+}
+.imprimable .invoicelist-footer table tbody{
+    float: right;
+}
+.imprimable .invoicelist-footer table th {
+	font-size: 1.1rem;
+    text-align: left;
+    letter-spacing: 0;
+	background-color: #FFF;
+	color: #666666;
+}
+.imprimable .invoicelist-footer table td {
+	font-size: 1.1rem;
+    padding: 1rem 2rem 0 1rem;
+    text-align: right;
+}
+.imprimable .invoicelist-footer table tr td {
+	font-size: 1.1rem;
+    padding: 2px;
+}
+.imprimable footer {
+    display: block;
+    margin: 1rem 0;
+    padding: 1rem 0 0;
+    top: 12cm
+}
+.imprimable footer p {
+    font-size: .9rem;
+}

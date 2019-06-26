@@ -1,0 +1,199 @@
+.limiter{
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    height: 100vh;
+}
+
+.container-login100{
+    height: 100%;
+    background-color: #FFFFFF77;
+}
+
+.wrap-login100{
+    height: 100%;
+}
+
+.login100-form{
+    height: 90%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.text-center a{
+    color: #6195FF;
+}
+
+::-webkit-scrollbar-track{
+	background-color: #FFFFFF;
+}
+
+::-webkit-scrollbar{
+	width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+	border-radius: 10px;
+	background-color: #555555;
+}
+
+.erreur{
+	height: 0px;
+}
+
+.erreur p{
+	position: relative;
+	bottom: 40px;
+	left: 5px; 
+	color: #f33; 
+}
+
+.profile input{
+	background-color: #AAFFAA;
+}
+
+.profile input[readonly]{
+	background-color: #F4F4F4;
+}
+
+.home{
+    height: 72px !IMPORTANT;
+}
+
+@media (max-width: 767px){
+    .home{
+        height: 50px !IMPORTANT;
+    }
+}
+
+a{
+    cursor: pointer;
+}
+
+#img-profile{
+	float: left;
+	position: relative;
+	bottom: 15px;
+	right: 5px;
+	margin-top: 1px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+#img-client{
+	border-radius: 50%;
+	height: 190px;
+    width: 190px;
+    position: relative;
+    margin: 0 50px;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 767px){
+	#img-profile{
+	    position: relative;
+	    bottom: 10px;
+	    right: 10px;
+    	z-index: 1;
+		margin-left: 6px;
+	    margin-right: 5px;
+	    width: 39px;
+	    height: 39px;
+	}
+	
+	/*
+	
+	PROBLEME
+	
+	*/
+	ul li ul li:first-child{
+		width: 100px;
+	}
+}
+
+@media (min-width: 200px) and (max-width: 400px){
+    #img-client{
+		border-radius: 50%;
+	    width: 80%;
+	    margin: 0 10%;
+	}
+}
+
+#form-profile, #register{
+	height: 55%;
+}
+
+#file{
+	outline: none;
+	height: 0;
+    width: 0;
+}
+
+.section .main-btn{
+	float: right;
+	margin-right: 10px;
+}
+
+#acceuil .main-btn+div{
+	clear: both;
+}
+
+.snackbar-container{
+	display: flex;
+    justify-content: center;
+}
+
+.snackbar {
+    visibility: hidden;
+    width: 290px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 15px;
+    padding: 15px;
+    position: fixed;
+    z-index: 1;
+    bottom: 30px;
+    font-size: 15px;
+}
+
+@media (max-width: 420px){
+	.snackbar {
+	    width: 67vw;
+	    font-size: 13px;
+	}
+}
+
+.snackbar.show {
+    visibility: visible;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@keyframes fadein {
+    0% {bottom: 0; opacity: 0;}
+    100% {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadeout {
+    0% {bottom: 30px; opacity: 1;}
+    100% {bottom: 0; opacity: 0;}
+}
+
+input::placeholder{
+	text-align: right;
+}
+
+input[type=date]{
+	color: transparent;
+}
+
+input[type=date]:focus, .notempty{
+	color: #354052 !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
